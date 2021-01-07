@@ -5,7 +5,7 @@ from espn_api.basketball.constant import STATS_MAP
 
 mainLeague = League(1107053257, 2021,
                     'MY-SWID',
-                    'MY-ESPN')
+                    'MY-ESPN_S2')
 listOfTeamsPlaying = mainLeague.standings()
 agents = mainLeague.free_agents()
 
