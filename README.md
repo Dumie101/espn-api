@@ -1,7 +1,8 @@
 Dumie101 Fantasy League Project
 
 
-Rules
+Rules: https://www.espn.com/fantasy/basketball/story/_/id/20783155/espn-fantasy-basketball-101-how-play
+
 					   Points System (For my personal Fantasy League)
 					   
 							Field goals made: 2 
