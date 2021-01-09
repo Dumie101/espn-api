@@ -16,39 +16,37 @@ Since, they already get a decent amount of playing time already their minutes ar
 				( Average Points / Average Games Played / Average MPG )
         
  
-Points System (For my personal Fantasy League)
+					Points System (For my personal Fantasy League)
+							Field goals made: 2 
+							Field goals missed: -1
+							Free-throws made: 1
+							Free throws missed: -1
+							Three points: 1
+							Rebounds: 1
+							Assists: 2
+							Steals: 4
+							Blocks: 4
+							Turnovers: -2
+							Points: 1
 
-Field goals made: 2 
-Field goals missed: -1
-Free-throws made: 1
-Free throws missed: -1
-Three points: 1
-Rebounds: 1
-Assists: 2
-Steals: 4
-Blocks: 4
-Turnovers: -2
-Points: 1
-
-Basketball Statistical Key 
-
-PTS : Points
-BLK :  Blocks
-STL : Steals
-AST : Assists 
-OREB: Offensive Rebounds
-RED: Rebounds
-PF: Personal Fouls 
-TO: Turnovers
-FGM: Field Goal Made
-FGA: Field Goals Attempted 
-FTM: Free Throws Made
-FTA: Free Throws Attempted
-3PTM: 3 Points Made 
-3PTA: 3 Points Attempted
-FG% : Field Goal Percent 
-FT% : Free Throws Percent 
-3PT% : 3 Point Percentage 
-MPG : Minutes Per Game 
-Min: Minutes Played
-GP: Games Played
+						Basketball Statistical Key 
+							PTS : Points
+							BLK :  Blocks
+							STL : Steals
+							AST : Assists 
+							OREB: Offensive Rebounds
+							RED: Rebounds
+							PF: Personal Fouls 
+							TO: Turnovers
+							FGM: Field Goal Made
+							FGA: Field Goals Attempted 
+							FTM: Free Throws Made
+							FTA: Free Throws Attempted
+							3PTM: 3 Points Made 
+							3PTA: 3 Points Attempted
+							FG% : Field Goal Percent 
+							FT% : Free Throws Percent 
+							3PT% : 3 Point Percentage 
+							MPG : Minutes Per Game 
+							Min: Minutes Played
+							GP: Games Played
