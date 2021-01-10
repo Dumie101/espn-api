@@ -51,7 +51,7 @@ to generate fast points and players who are out or playing day to day are risky.
 we need players that play high amount of minutes. The max minutes per game (MPG) a player can have is 48 mins. We will look at players that have 
 20+ mins the last 2020-2021, last 7 days, last 15 days, and last 30 days and we will rank based on the amount of points generated, for 2020-2021, last 7 days, last 15 days, and last 30 days. We will also  divided the average points generated with the average MPG therefore finding players that are the most efficient based on the amount of time they play. Since, they already get a decent amount of playing time already their minutes are likely to increase. This will be the most basic way to see which players to pick up from waivers. 
 
-			 PPM = ( Average Points / Average Games Played / Average MPG ) 
+			 	PPM = ( Average Points / Average Games Played / Average MPG ) 
 					
 Now, we have the players ordered by their points per min. Next, talking to my friend we got the idea for either getting the percent change from this year vs last year or plotting there game mins over time and getting the slope from the line of best fit. Either way we will have another variable to work with. This next part is the equation my friend made for ranking. 
         
