@@ -1,17 +1,34 @@
+from turtle import pd
+
+
+
 from espn_api.basketball import League
 from espn_api.basketball import Team
 from espn_api.basketball import Player
 from espn_api.basketball.constant import STATS_MAP
+from inflect import val
+
+
+
+from termcolor import colored
+
 
 mainLeague = League(1107053257, 2021,
-                    'MY-SWID',
-                    'MY-ESPN_S2')
-listOfTeamsPlaying = mainLeague.standings()
-agents = mainLeague.free_agents()
+                    'AEB0MapaDpkGRJLdc3k2A16WWcQocZAUij77Z3wyNGUYm6ppTYfZbuElD0jgtDu0Cwp%2BLFTmyGVnvXHIZ%2BFXh4ZDr6qAe%2Bot2mhu%2F0s4GQOYM5gsMGE%2BgF6goo0uqkAPuUWlC4G9nmSJqog3wrncl0sOT4j8cVaZUjkvYStQhlf3ZIlJIewG38aWMVkS1E2a%2FI3L%2BzVDMbUJ%2BHIyn9BztPhIfHrNhYzMVWwhhX9rMIHiK5yomd3HgIIYS%2BzRSsaf59QJJjIdUEpOHvQmsJQugF1mceGRXgaunJqOPkzQCrvitg%3D%3D',
+                    '{41D10CD4-102D-4013-8F09-43267F4F3C91}')
 
-#tester = mainLeague.free_agents()[3]
+listOfTeamsPlaying = mainLeague.standings()
+agents = mainLeague.free_agents(size=150)
+
+
+
+# 4066383
+#Miles Bridges
+
+
+tester = mainLeague.free_agents()[3]
 #print(tester.__dict__['stats'].keys())
-#print(tester)
+print(tester)
 #print(tester.__dict__['injuryStatus'])
 #print(tester.__dict__['stats'])  #: Full Season Stats (2021)
 # print(tester.__dict__['stats']['002021'])  #: Full Season Stats (2020)
@@ -19,6 +36,7 @@ agents = mainLeague.free_agents()
 # print(tester.__dict__['stats']['012021'])  #: Last 7 Days Stats
 # print(tester.__dict__['stats']['022021'])  #: Last 15 Days Stats
 # print(tester.__dict__['stats']['032021'])  #: Last 30 Days Stats
+
 
 # Field goals made: 2
 # Field goals missed: -1
@@ -49,6 +67,13 @@ def myPoints(player):
 
 playersDic = {}
 
+
+
+
+
+
+
+
 for players in agents:
     if players.__getattribute__('injuryStatus') == 'ACTIVE' and '022021' in players.__getattribute__('stats').keys() and players.__getattribute__('stats')['022021']['avg']['MIN'] >= 20:
         playersDic[players] = myPoints(players) / players.__getattribute__('stats')['022021']['avg']['MIN']
@@ -63,6 +88,20 @@ def get_key(val):
 
 count = 0
 
-for i in sorted(playersDic.values(), reverse= True):
-    count += 1
-    print( str(count) + '.', colored(get_key(i), 'green'), '||', i, colored("(PPM)", 'red'), '||', get_key(i).__getattribute__('stats')['022021']['avg']['MIN'], colored("(Mins)", 'red'))
+# for i in sorted(playersDic.values(), reverse=True):
+#     count += 1
+#     print(str(count) + '.', colored(get_key(i), 'green'), '||', round(i, 2), colored("(PPM)", 'red'), '||', get_key(i).__getattribute__('stats')['022021']['avg']['MIN'], colored("(Mins)", 'red'))
+
+
+
+
+
+
+
+
+
+# 1.Get the minutes from every game each player plays
+# 2. Calculate the Percent Change from this season and last season
+# 3. Rank based on sqaure root ( x^2 + y^2  ), x = ppm, y = percent change or line of best fit, and get the slope of that
+# 4. Create a user interface
+
