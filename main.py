@@ -14,8 +14,8 @@ from termcolor import colored
 
 
 mainLeague = League(1107053257, 2021,
-                    'AEB0MapaDpkGRJLdc3k2A16WWcQocZAUij77Z3wyNGUYm6ppTYfZbuElD0jgtDu0Cwp%2BLFTmyGVnvXHIZ%2BFXh4ZDr6qAe%2Bot2mhu%2F0s4GQOYM5gsMGE%2BgF6goo0uqkAPuUWlC4G9nmSJqog3wrncl0sOT4j8cVaZUjkvYStQhlf3ZIlJIewG38aWMVkS1E2a%2FI3L%2BzVDMbUJ%2BHIyn9BztPhIfHrNhYzMVWwhhX9rMIHiK5yomd3HgIIYS%2BzRSsaf59QJJjIdUEpOHvQmsJQugF1mceGRXgaunJqOPkzQCrvitg%3D%3D',
-                    '{41D10CD4-102D-4013-8F09-43267F4F3C91}')
+                    'ESPN S2',
+                    'SWID')
 
 listOfTeamsPlaying = mainLeague.standings()
 agents = mainLeague.free_agents(size=150)
@@ -91,8 +91,6 @@ count = 0
 # for i in sorted(playersDic.values(), reverse=True):
 #     count += 1
 #     print(str(count) + '.', colored(get_key(i), 'green'), '||', round(i, 2), colored("(PPM)", 'red'), '||', get_key(i).__getattribute__('stats')['022021']['avg']['MIN'], colored("(Mins)", 'red'))
-
-
 
 
 
