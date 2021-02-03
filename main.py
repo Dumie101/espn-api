@@ -1,34 +1,20 @@
 from turtle import pd
-
-
-
 from espn_api.basketball import League
 from espn_api.basketball import Team
 from espn_api.basketball import Player
 from espn_api.basketball.constant import STATS_MAP
 from inflect import val
-
-
-
 from termcolor import colored
-
 
 mainLeague = League(1107053257, 2021,
                     'ESPN S2',
                     'SWID')
-
 listOfTeamsPlaying = mainLeague.standings()
 agents = mainLeague.free_agents(size=150)
 
-
-
-# 4066383
-#Miles Bridges
-
-
-tester = mainLeague.free_agents()[3]
+#tester = mainLeague.free_agents()[3]
 #print(tester.__dict__['stats'].keys())
-print(tester)
+#print(tester)
 #print(tester.__dict__['injuryStatus'])
 #print(tester.__dict__['stats'])  #: Full Season Stats (2021)
 # print(tester.__dict__['stats']['002021'])  #: Full Season Stats (2020)
@@ -64,14 +50,7 @@ def myPoints(player):
     points += player.__getattribute__('stats')['022021']['avg']['PTS']
     return points
 
-
 playersDic = {}
-
-
-
-
-
-
 
 
 for players in agents:
@@ -88,18 +67,11 @@ def get_key(val):
 
 count = 0
 
-# for i in sorted(playersDic.values(), reverse=True):
-#     count += 1
-#     print(str(count) + '.', colored(get_key(i), 'green'), '||', round(i, 2), colored("(PPM)", 'red'), '||', get_key(i).__getattribute__('stats')['022021']['avg']['MIN'], colored("(Mins)", 'red'))
-
-
-
-
-
-
+for i in sorted(playersDic.values(), reverse=True):
+count += 1
+print(str(count) + '.', colored(get_key(i), 'green'), '||', round(i, 2), colored("(PPM)", 'red'), '||', get_key(i).__getattribute__('stats')['022021']['avg']['MIN'], colored("(Mins)", 'red'))
 
 # 1.Get the minutes from every game each player plays
 # 2. Calculate the Percent Change from this season and last season
 # 3. Rank based on sqaure root ( x^2 + y^2  ), x = ppm, y = percent change or line of best fit, and get the slope of that
 # 4. Create a user interface
-
