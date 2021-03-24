@@ -54,4 +54,11 @@ we need players that play high amount of minutes. The max minutes per game (MPG)
 			 	PPM = ( Average Points / Average Games Played / Average MPG ) 
 					
 Now, we have the players ordered by their points per min. Next, talking to my friend we got the idea for either getting the percent change from this year vs last year or plotting there game mins over time and getting the slope from the line of best fit. Either way we will have another variable to work with. This next part is the equation my friend made for ranking. 
+
+
+
+
+
+Programmer: Ichiro Banskota
+Maths: Balkar Yildirim
         
